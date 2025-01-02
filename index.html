@@ -2,8 +2,53 @@
 <html lang="english">
     <head>
         <meta charset ="utf-8">
+        <link rel ="stylesheet" href="syle.css">
     </head>
     <body>
-        
+        <script>
+            const string = " The revolution will not be televised"
+            function add7(number){
+                return number + 7
+            }
+            function multiply(number, number2) {
+                return number * number2
+            }
+
+           function capitalize(string) {
+            string = string.toLowerCase()
+            let first = string.slice(0,1).toUpperCase()
+            return first + string.slice(1)
+           }
+
+           let lastLetter = (string) => string.substr(string.length-1, 1)
+
+            console.log(add7(23))
+            console.log(multiply(23,2))
+            console.log(capitalize("HELLO"))
+            console.log(lastLetter("abcd"))
+        </script>
+
+        <div class = "header">
+            <h3 class = "name">Amgad Ahmed</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Education </a></li>
+                <li><a href="">Projects </a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class = "container">
+            <img class = "me" alt ="beatiful dark skin man" src ="images/me.jpg" height= "600" width="400px">
+            <div class = "subsection">
+                <h1>My Portfolio</h1>
+                <p class ="subtext"> Welcome to my portfolio. I hope you like what you see!</p>
+                <button class ="contact">Contact</button>
+            </div>
+            <p class ="pnumber">Page | 01</p>
+        </div>
+
+        <div class = "footer">
+            <p> CopyWright @Amgad Ahmed 2025 </p>
+        </div>
     </body>
 </html>
