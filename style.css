@@ -13,11 +13,13 @@
 :root {
     --main-color: #ffde21;
     --text-color: white;
+    --bg-color: #222222;
 }
 body {
     margin: 0;
     height: 100vh;
     flex-direction: column;
+    background-color: var(--bg-color);
     color: var(--text-color)
 }
 
@@ -77,10 +79,18 @@ html {
 
 .footer {
     display: flex;
-    background: #3b3b3b;
+    /*background: #3b3b3b;
     padding: 0px;
     justify-content: center;
-    color: white;
+    color: white;*/
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    padding: 16px 100px;
+    background: #3b3b3b;
+    font-size: 16px;
+    width: 100%;
+    align-items: center;
+
 }
 
 .name {
@@ -138,12 +148,13 @@ h1 {
 }*/
 
 .me {
+    margin-top: 60px;
     margin-bottom: 40px;
     margin-left: 1rem;
     border-radius: 50%;
-    position:relative;
-    top: 3rem;
-   /* width: 32vw;*/
+    /*position:absolute;
+    top: 3rem;*/
+   /*width: 28vw;*/
     cursor: pointer;
     transition: .4s ease-in-out;
 }
@@ -214,4 +225,201 @@ span {
 .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
+} 
+
+/*.text-animation {
+    position:relative;
 }
+
+.text-animation ::before {
+    content: "Software Engineer";
+    color: var(--bg-color);
+    animation: words 20s infinite;
+}
+
+.text-animation ::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc (100% + 8px);
+    height : 100%;
+    border-left: 3-x solid var (var(--bg-color));
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps 
+    (14) infinite;}
+*/
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.education{
+    padding: 100px 15px;
+    background :var(--bg-color);
+}
+
+.education h2 {
+    margin-bottom: 5rem;
+}
+.timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    margin-bottom:40px;
+    width: 100%;
+    position:relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+}
+
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height:21px;
+    width:21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position:absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color:white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: var(--bg-color);
+    border: 3px solid var(--main0-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor:pointer;
+    transition:3s ease-in-out;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color:white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color:white ;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+.info,
+.content {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.heading-ecom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-icon{
+    margin-bottom: 8px;
+}
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s ease-in-out;
+}
+
+.description,
+.description-bio {
+    text-wrap: wrap;
+    font-size: 14px;
+    max-width: 700px;
+}
+
+h5,
+.heading-bio {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.project2 {
+    /*display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 200px;*/
+}
+
+.heading-bio{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*.content {
+    max-width: 1600px;
+    display: flex;
+    padding: 0 200px;
+    justify-content: space-between;
+
+}*/
