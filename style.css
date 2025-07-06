@@ -56,7 +56,7 @@ html {
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-weight: 500;
     transition: .3s ease;
     border-bottom: 3px solid transparent;
@@ -160,7 +160,7 @@ span {
     color: var(--main-color);
 
 }
-.logo span {
+.logo span{
     color:var(--main-color)
 }
 
@@ -309,6 +309,97 @@ h5,
 .heading-bio{
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.cardContainer {
+    position: relative;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.popup a {
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    font-size: 6.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: 35%;
+    left: 24%;
+    padding: 10px;
+}
+.popup2 a{
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    font-size: 6.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: 35%;
+    left: 56%;
+    padding: 10px;
+}
+.popup3 a{
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    font-size: 6.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    padding: 10px;
+}
+.imageContainer {
+    position: relative;
+    display: inline-block;
+}
+.popup a:hover, .popup2 a:hover, .popup3 a:hover{
+     transform: scale(1.2)translateY(-10px);
+
+}
+.headingP {
+    margin-top: 10rem;
+    font-size: 8rem;
+    text-align: center;
+} 
+
+.projectCard {
+   margin-left: 5rem;
+}
+
+.cardTitle {
+    font-size: 18px;
+    margin: 6px;
+}
+.cardPara {
+    font-size: 14px;
+    font-weight: 100;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+.cardImg, .cardImg3{
+    height: 200px;
+    width: 400px;
+}
+.cardImg2  {
+    height: 200px;
+    width: 440px;
 }
 
 .contact{
