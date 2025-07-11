@@ -259,7 +259,7 @@ justify-content: center;
     flex-wrap: wrap;
 }*/
 .ecom {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 /*.info:hover,
 .content:hover {
@@ -311,11 +311,13 @@ h5,
     margin-bottom: 3rem;
 }
 
+
 .cardContainer {
     position: relative;
     display: flex;
     margin-top: 5rem;
     margin-bottom: 10rem;
+    justify-content: center;
 }
 .calcLink, .bookLink, .gifLink{
     text-decoration:underline;
