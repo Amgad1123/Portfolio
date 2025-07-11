@@ -318,6 +318,7 @@ h5,
     margin-top: 5rem;
     margin-bottom: 10rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .calcLink, .bookLink, .gifLink{
     text-decoration:underline;
