@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+   
     border: none;
     outline: none;
     scroll-behavior: smooth;
@@ -317,20 +317,30 @@ h5,
     margin-top: 5rem;
     margin-bottom: 10rem;
 }
+.calcLink, .bookLink, .gifLink{
+    text-decoration:underline;
+}
 
+.calcLine, .bookLine,  .gifLine{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.calcLink:hover, .bookLink:hover, .gifLink:hover{
+    color: var(--main-color);
+}
 .popup a {
     justify-content: center;
     align-items: center;
     width: 10rem;
     height: 10rem;
-    font-size: 6.5rem;
+    font-size: 3.5rem;
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .3s ease-in-out;
-    position: absolute;
-    top: 35%;
-    left: 24%;
+    transition: .5s ease-in-out;
     padding: 10px;
 }
 .popup2 a{
@@ -339,14 +349,11 @@ h5,
     width: 10rem;
     height: 10rem;
     background: transparent;
-    font-size: 6.5rem;
+    font-size: 3.5rem;
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .3s ease-in-out;
-    position: absolute;
-    top: 35%;
-    left: 56%;
+    transition: .5s ease-in-out;
     padding: 10px;
 }
 .popup3 a{
@@ -355,23 +362,21 @@ h5,
     width: 10rem;
     height: 10rem;
     background: transparent;
-    font-size: 6.5rem;
+    font-size: 3.5rem;
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .3s ease-in-out;
-    position: absolute;
-    top: 35%;
-    left: 85%;
+    transition: .3s;
     padding: 10px;
 }
 .imageContainer {
     position: relative;
     display: inline-block;
 }
-.popup a:hover, .popup2 a:hover, .popup3 a:hover{
-     transform: scale(1.2)translateY(-10px);
 
+.popup a:hover, .popup2 a:hover, .popup3 a:hover{
+     transform: scale(1.4)translateY(-12px);
+     color: red;
 }
 .headingP {
     margin-top: 10rem;
