@@ -320,11 +320,11 @@ h5,
     justify-content: center;
     flex-wrap: wrap;
 }
-.calcLink, .bookLink, .gifLink{
+.calcLink, .bookLink, .gifLink, .weatherLink{
     text-decoration:underline;
 }
 
-.calcLine, .bookLine,  .gifLine{
+.calcLine, .bookLine,  .gifLine, .weatherLine{
     display: flex;
     align-items: center;
     font-size: 18px;
