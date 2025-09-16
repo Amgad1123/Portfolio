@@ -320,18 +320,18 @@ h5,
     justify-content: center;
     flex-wrap: wrap;
 }
-.calcLink, .bookLink, .gifLink, .weatherLink{
+.eatzLink, .calcLink, .bookLink, .gifLink, .weatherLink{
     text-decoration:underline;
 }
 
-.calcLine, .bookLine,  .gifLine, .weatherLine{
+.eatzLine, .calcLine, .bookLine,  .gifLine, .weatherLine{
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
 }
 
-.calcLink:hover, .bookLink:hover, .gifLink:hover{
+.eatzLink:hover, .calcLink:hover, .weatherLink:hover, .bookLink:hover, .gifLink:hover{
     color: var(--main-color);
 }
 .popup a {
@@ -400,6 +400,7 @@ h5,
     font-weight: 100;
     max-width: 400px;
     flex-wrap: wrap;
+    margin-bottom: 12px;
 }
 .cardImg, .cardImg3{
     height: 200px;
