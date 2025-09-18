@@ -320,18 +320,18 @@ h5,
     justify-content: center;
     flex-wrap: wrap;
 }
-.eatzLink, .calcLink, .bookLink, .gifLink, .weatherLink{
+.eatzLink, .resumeLink, .bookLink, .gifLink, .weatherLink{
     text-decoration:underline;
 }
 
-.eatzLine, .calcLine, .bookLine,  .gifLine, .weatherLine{
+.eatzLine, .resumeLine, .bookLine,  .gifLine, .weatherLine{
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
 }
 
-.eatzLink:hover, .calcLink:hover, .weatherLink:hover, .bookLink:hover, .gifLink:hover{
+.eatzLink:hover, .resumeLink:hover, .weatherLink:hover, .bookLink:hover, .gifLink:hover{
     color: var(--main-color);
 }
 .popup a {
